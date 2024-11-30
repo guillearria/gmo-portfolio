@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
+  const projects = [
+    {
+      title: "sample",
+      description: "sample",
+      link: "sample",
+      image: "https://via.placeholder.com/200"
+    },
+    {
+      title: "sample",
+      description: "sample",
+      link: "sample",
+      image: "https://via.placeholder.com/200"
+    },
+    {
+      title: "sample",
+      description: "sample",
+      link: "sample",
+      image: "https://via.placeholder.com/200"
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <section>
+        <h1>About Me</h1> 
+        <p>Hi I'm Guillermo, an AI enthusiast with experience in NLP, machine learning, and full-stack web development.</p>
+      </section>
+      <section>
+        <h2>My Projects</h2>
+        <div>
+          {projects.map((callback,index) => (
+            <div>Project Card</div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
