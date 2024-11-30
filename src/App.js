@@ -33,7 +33,7 @@ function App() {
       </section>
       <section id="projects">
         <h2>My Projects</h2>
-        <div>
+        <div className="ProjectCard__div">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

@@ -1,3 +1,5 @@
+import './ProjectCard.css'
+
 function ProjectCard({ title, description, link, image }) {
     return (
         <div>

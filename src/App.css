@@ -7,3 +7,9 @@
 section {
   padding: 50px 10%;
 }
+
+.ProjectCard__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
