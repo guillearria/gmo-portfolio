@@ -1,0 +1,10 @@
+.project-card {
+    border: 1px solid #343b44;
+    padding: 0 0 20px 0;
+    margin: 10px;
+    width: 200px;
+}
+
+.project-card img {
+    width: 100%;
+}

@@ -8,7 +8,7 @@ section {
   padding: 50px 10%;
 }
 
-.ProjectCard__div {
+.project-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
