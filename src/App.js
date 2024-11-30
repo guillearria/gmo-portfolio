@@ -26,17 +26,21 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <section>
+      <section id="about">
         <h1>About Me</h1> 
         <p>Hi I'm Guillermo, an AI enthusiast with experience in NLP, machine learning, and full-stack web development.</p>
       </section>
-      <section>
+      <section id="projects">
         <h2>My Projects</h2>
         <div>
-          {projects.map((callback,index) => (
+          {projects.map((project,index) => (
             <div>Project Card</div>
           ))}
         </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/guillearria/">LinkedIn</a></p>
       </section>
     </div>
   );
