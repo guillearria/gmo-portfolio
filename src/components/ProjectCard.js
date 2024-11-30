@@ -8,3 +8,5 @@ function ProjectCard({ title, description, link, image }) {
         </div>
     )
 }
+
+export default ProjectCard;

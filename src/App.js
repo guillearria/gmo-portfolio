@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import ProjectCard from './components/ProjectCard';
 import './App.css';
 
 function App() {
@@ -33,8 +34,8 @@ function App() {
       <section id="projects">
         <h2>My Projects</h2>
         <div>
-          {projects.map((project,index) => (
-            <div>Project Card</div>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
       </section>
