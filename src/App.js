@@ -1,5 +1,6 @@
-import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import ProjectCard from './components/ProjectCard';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
       <section id="contact">
         <h2>Contact</h2>
         <p>Connect with me on <a href="https://www.linkedin.com/in/guillearria/">LinkedIn</a></p>
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

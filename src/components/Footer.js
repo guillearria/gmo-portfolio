@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer>
-            <p>&copy; &infin;</p>
+            <p>&copy; &infin; Guille Arria. All right?</p>
         </footer>
     );
 }
