@@ -3,7 +3,7 @@ import './Navbar.css';
 function Navbar() {
     return (
         <nav>
-            <h2>G'Mo AI Portfolio</h2>
+            <h2>GuilleArria.com</h2>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
