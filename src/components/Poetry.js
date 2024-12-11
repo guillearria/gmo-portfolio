@@ -30,7 +30,11 @@ function Poetry() {
 
     return (
         <div>
-            <pre>{JSON.stringify(poem)}</pre>
+            {poem[0].lines.map((line, index) => (
+                <div key={index} className="poem-line">
+                    {line}
+                </div>
+            ))}
         </div>
     );
 }
