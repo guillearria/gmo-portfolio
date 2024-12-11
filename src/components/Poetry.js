@@ -3,7 +3,7 @@ import { fetchOzymandias } from "../services/api";
 
 function Poetry() {
     const [poem, setPoem] = useState(null);
-    const [isLoading, setIsLoading] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ function Poetry() {
     return (
         <div>
             {poem[0].lines.map((line, index) => (
-                <div key={index} className="poem-line">
+                <div key={index} className="poem-lines">
                     {line}
                 </div>
             ))}
