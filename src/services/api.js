@@ -6,7 +6,7 @@ export const fetchOzymandias = async () => {
         return data;
     } catch (error) {
         console.error(`Error fetching results: ${error}`);
-        return null
+        return null;
     }
 };
 
@@ -19,6 +19,19 @@ export const fetchAuthors = async () => {
         return data;
     } catch (error) {
         console.error(`Error fetching results: ${error}`);
-        return null
+        return null;
     }
-}
+};
+
+// Fetch list of PoetryDB authors
+export const fetchTitles = async (author) => {
+    try {
+        const response = await fetch(`https://poetrydb.org/${author}/title`);
+        if (!response.ok) throw new Error(`Failed to fetch results: ${response.status}`);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error(`Error fetching results: ${error}`);
+        return null;
+    }
+};
