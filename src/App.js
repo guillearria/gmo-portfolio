@@ -1,5 +1,5 @@
 import Footer from './components/Footer';
-import Poetry from './components/Poetry';
+import PoemAuthorList from './components/PoemAuthorList';
 import ProjectCard from './components/ProjectCard';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -46,8 +46,7 @@ function App() {
         <p>Connect with me on <a href="https://www.linkedin.com/in/guillearria/">LinkedIn</a></p>
       </section>
       <section>
-        <h2>A Poem for You</h2>
-        <Poetry />
+        <PoemAuthorList />
       </section>
       <section>
         <Footer />
